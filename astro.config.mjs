@@ -10,4 +10,12 @@
 export default /** @type {import('astro').AstroUserConfig} */ ({
 	// Comment out "renderers: []" to enable Astro's default component support.
 	renderers: [],
+	vite: {
+		server: {
+			hmr: {
+				clientPort: process.env.HMR_HOST ? 443: 3000,
+				host: process.env.HMR_HOST ? process.env.HMR_HOST.substring("https://".length) : "localhost"
+			}
+		}
+	},
 });
