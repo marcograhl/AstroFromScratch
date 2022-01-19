@@ -5,12 +5,12 @@
 tasks:
   - init: npm install
     command: |
-      export HMR_HOST=`gp url 3000`
+      export HMR_HOST=`gp url 24678`
       npm run dev
 
 
 ports:
-  - port: 3000
+  - port: 24678
     onOpen: open-browser
 
 
