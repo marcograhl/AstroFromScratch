@@ -3,7 +3,8 @@
 
 
 <section>
- <h2> Hover me: if green Postcss-Nesting works </h2>
+ <h2> Hover me: if Postcss-Nesting works I'm green</h2>
+ <p class="gradient-text">If Open Props work I'm a cool gradient Text</p>
 </section>
 
 
@@ -15,6 +16,13 @@ h2{
     &:hover{
         color: green;
     }
+}
+
+.gradient-text {
+  font-size: var(--font-size-6);
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 </style>

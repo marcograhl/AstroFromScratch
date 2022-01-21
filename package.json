@@ -11,6 +11,10 @@
   "devDependencies": {
     "astro": "^0.22.14",
     "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
     "postcss-nesting": "^10.1.2"
+  },
+  "dependencies": {
+    "open-props": "^1.1.5"
   }
 }
