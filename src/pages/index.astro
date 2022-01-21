@@ -1,5 +1,8 @@
 ---
 // Component imports and setup JavaScript go here!
+
+import Test from '../components/Test.astro'
+
 ---
 
 <html lang="en">
@@ -8,12 +11,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<title>Welcome to Astro</title>
 		<style>
-			/* scoped CSS styles go here: */
-			/* h1 { ... } */
+			@import "open-props/postcss/style";
+			@import "open-props/postcss/normalize"; 
 		</style>
 	</head>
 
 	<body>
 		<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+		<Test />
 	</body>
 </html>
